@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use("/api/user/", userRoute);
 
-app.get("/", (req, res) => res.send("API is running on........  🌎 !!!"));
+app.get("/", (req, res) => res.send("API is on to run .......  🌎 !!!"));
 
 const PORT = process.env.PORT || 1000;
 app.listen(PORT, () => console.log("APP is Connected on PORT ", PORT));
