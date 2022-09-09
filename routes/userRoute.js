@@ -5,7 +5,7 @@ const User = require("../models/userModel");
 app.post("/login", async (req, res) => {
   try {
     const result = await User.findOne({
-      username: req.body.username,
+      email: req.body.email,
       password: req.body.password,
     });
     if (result) {
